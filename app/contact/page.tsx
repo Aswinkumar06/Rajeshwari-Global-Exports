@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle, AlertCircle } from "lucide-react"
 
 const contactInfo = [
   {
@@ -71,19 +71,67 @@ export default function ContactPage() {
     e.preventDefault()
     setFormState("submitting")
     
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    
-    // In a real implementation, you would send this to your backend
-    console.log("Form submitted:", formData)
-    setFormState("success")
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+
+      const data = await res.json()
+
+      if (res.ok && data.success) {
+        setFormState("success")
+      } else {
+        console.error('Form submission error:', data)
+        setFormState("error")
+      }
+    } catch (error) {
+      console.error('Form submission failed:', error)
+      setFormState("error")
+    }
   }
 
   const handleChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
-  if (formState === "success") {
+  if (formState === "error") {
+    return (
+      <div className="flex flex-col min-h-[80vh]">
+        <section className="flex-1 flex items-center justify-center py-16 lg:py-24 bg-background">
+          <div className="mx-auto max-w-md px-4 text-center">
+            <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-6">
+              <AlertCircle className="h-8 w-8 text-destructive" />
+            </div>
+            <h1 className="font-serif text-3xl font-bold text-foreground mb-4">
+              Oops, Something Went Wrong
+            </h1>
+            <p className="text-muted-foreground mb-8">
+              We encountered an error while sending your inquiry. Please try again or contact us directly via WhatsApp or email.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button onClick={() => setFormState("idle")}>
+                Try Again
+              </Button>
+              <Button asChild variant="outline">
+                <a
+                  href="https://wa.me/919080653388?text=Hello%2C%20I%20am%20interested%20in%20your%20cocopeat%20products."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Contact via WhatsApp
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  }
     return (
       <div className="flex flex-col min-h-[80vh]">
         <section className="flex-1 flex items-center justify-center py-16 lg:py-24 bg-background">
