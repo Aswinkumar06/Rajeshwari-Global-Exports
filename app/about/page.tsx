@@ -7,7 +7,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "About Us | Rajeshwari Global Exports",
-  description: "Learn about Rajeshwari Global Exports - a leading cocopeat manufacturer and exporter from India with over 15 years of experience serving global markets.",
+  description: "Learn about Rajeshwari Global Exports - a leading cocopeat manufacturer and exporter from India with 3 years of experience serving global markets.",
 }
 
 const values = [
@@ -66,7 +66,7 @@ export default function AboutPage() {
               Premium Cocopeat from the Heart of South India
             </h1>
             <p className="text-primary-foreground/80 text-lg leading-relaxed">
-              Rajeshwari Global Exports has been at the forefront of cocopeat manufacturing and export since 2008, building lasting relationships with clients worldwide.
+              Rajeshwari Global Exports has been at the forefront of cocopeat manufacturing and export since 2026, building lasting relationships with clients worldwide.
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Rajeshwari Global Exports was founded in 2008 in Sathyamangalam, Tamil Nadu, a region renowned for its abundant coconut production and traditional expertise in coir processing.
+                  Rajeshwari Global Exports was founded in 2026 in Sathyamangalam, Tamil Nadu, a region renowned for its abundant coconut production and traditional expertise in coir processing.
                 </p>
                 <p>
                   What started as a small family business has grown into a leading exporter of premium cocopeat products, serving clients across more than 50 countries on six continents. Our journey has been driven by an unwavering commitment to quality, sustainability, and customer satisfaction.
@@ -171,11 +171,11 @@ export default function AboutPage() {
             <div>
               <p className="text-primary-foreground/80 font-medium mb-2 uppercase tracking-wide text-sm">Export Experience</p>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary-foreground mb-6 text-balance">
-                15+ Years of Global Excellence
+                3 Years of Global Excellence
               </h2>
               <div className="space-y-4 text-primary-foreground/80 leading-relaxed">
                 <p>
-                  Our extensive export experience spans over 15 years, during which we have established strong relationships with importers, distributors, and agricultural companies across the globe.
+                  Our extensive export experience spans 3 years, during which we have established strong relationships with importers, distributors, and agricultural companies across the globe.
                 </p>
                 <p>
                   We understand the complexities of international trade, from documentation and customs compliance to logistics and delivery coordination. Our dedicated export team ensures smooth transactions and timely shipments to any destination.
@@ -187,7 +187,7 @@ export default function AboutPage() {
                   <p className="text-primary-foreground/80 text-sm">Countries Served</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-primary-foreground">1000+</p>
+                  <p className="text-4xl font-bold text-primary-foreground">100+</p>
                   <p className="text-primary-foreground/80 text-sm">Happy Clients</p>
                 </div>
                 <div>

@@ -52,9 +52,9 @@ export function Header() {
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <Button asChild variant="outline" size="sm">
-            <Link href="tel:+919080653388">
+            <Link href="tel:+916380636765">
               <Phone className="mr-2 h-4 w-4" />
-              +91-9080653388
+              +91-6380636765
             </Link>
           </Button>
           <Button asChild size="sm">
@@ -99,9 +99,9 @@ export function Header() {
                 </div>
                 <div className="py-6 space-y-3">
                   <Button asChild variant="outline" className="w-full">
-                    <Link href="tel:+919080653388">
+                    <Link href="tel:+916380636765">
                       <Phone className="mr-2 h-4 w-4" />
-                      +91-9080653388
+                      +91-6380636765
                     </Link>
                   </Button>
                   <Button asChild className="w-full">

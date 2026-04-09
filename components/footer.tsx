@@ -38,11 +38,11 @@ export function Footer() {
                 rajeshwaritraders12@gmail.com
               </a>
               <a 
-                href="tel:+919080653388" 
+                href="tel:+916380636765" 
                 className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                +91-9080653388
+                +91-6380636765
               </a>
               <div className="flex items-start gap-2 text-sm text-background/80">
                 <MapPin className="h-4 w-4 mt-0.5" />
