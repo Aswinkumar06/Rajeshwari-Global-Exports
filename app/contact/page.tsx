@@ -12,30 +12,35 @@ import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle, AlertCirc
 
 const contactInfo = [
   {
+    id: "email",
     icon: Mail,
     title: "Email",
     value: "rajeshwaritraders12@gmail.com",
     href: "mailto:rajeshwaritraders12@gmail.com",
   },
   {
+    id: "phone-primary",
     icon: Phone,
     title: "Phone",
     value: "+91-9080653388",
     href: "tel:+919080653388",
   },
   {
+    id: "phone-secondary",
     icon: Phone,
     title: "Phone",
     value: "+91-6380636765",
     href: "tel:+916380636765",
   },
   {
+    id: "location",
     icon: MapPin,
     title: "Location",
     value: "Sathyamangalam, Tamil Nadu, India",
     href: null,
   },
   {
+    id: "hours",
     icon: Clock,
     title: "Business Hours",
     value: "Mon - Sat: 9:00 AM - 6:00 PM IST",
@@ -197,7 +202,7 @@ export default function ContactPage() {
               </h2>
               <div className="space-y-6 mb-8">
                 {contactInfo.map((info) => (
-                  <div key={info.title} className="flex items-start gap-4">
+                  <div key={info.id} className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <info.icon className="h-5 w-5 text-primary" />
                     </div>
