@@ -19,13 +19,13 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    title: "Phone (Primary)",
+    title: "Phone",
     value: "+91-9080653388",
     href: "tel:+919080653388",
   },
   {
     icon: Phone,
-    title: "Phone (Secondary)",
+    title: "Phone",
     value: "+91-6380636765",
     href: "tel:+916380636765",
   },
