@@ -19,7 +19,13 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    title: "Phone",
+    title: "Phone (Primary)",
+    value: "+91-9080653388",
+    href: "tel:+919080653388",
+  },
+  {
+    icon: Phone,
+    title: "Phone (Secondary)",
     value: "+91-6380636765",
     href: "tel:+916380636765",
   },
@@ -222,7 +228,7 @@ export default function ContactPage() {
                   </p>
                   <Button asChild variant="secondary" className="w-full">
                     <a
-                      href="https://wa.me/916380636765?text=Hello%2C%20I%20am%20interested%20in%20your%20cocopeat%20products."
+                      href="https://wa.me/919080653388?text=Hello%2C%20I%20am%20interested%20in%20your%20cocopeat%20products."
                       target="_blank"
                       rel="noopener noreferrer"
                     >
