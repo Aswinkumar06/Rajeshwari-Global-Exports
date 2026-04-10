@@ -12,24 +12,35 @@ import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle, AlertCirc
 
 const contactInfo = [
   {
+    id: "email",
     icon: Mail,
     title: "Email",
     value: "rajeshwaritraders12@gmail.com",
     href: "mailto:rajeshwaritraders12@gmail.com",
   },
   {
+    id: "phone-primary",
     icon: Phone,
     title: "Phone",
     value: "+91-9080653388",
     href: "tel:+919080653388",
   },
   {
+    id: "phone-secondary",
+    icon: Phone,
+    title: "Phone",
+    value: "+91-6380636765",
+    href: "tel:+916380636765",
+  },
+  {
+    id: "location",
     icon: MapPin,
     title: "Location",
     value: "Sathyamangalam, Tamil Nadu, India",
     href: null,
   },
   {
+    id: "hours",
     icon: Clock,
     title: "Business Hours",
     value: "Mon - Sat: 9:00 AM - 6:00 PM IST",
@@ -132,6 +143,8 @@ export default function ContactPage() {
       </div>
     )
   }
+
+  if (formState === "success") {
     return (
       <div className="flex flex-col min-h-[80vh]">
         <section className="flex-1 flex items-center justify-center py-16 lg:py-24 bg-background">
@@ -146,11 +159,11 @@ export default function ContactPage() {
               We have received your message and will get back to you within 24 hours. Our team is excited to assist you with your cocopeat requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild>
-                <Link href="/">Return Home</Link>
+              <Button onClick={() => setFormState("idle")}>
+                Send Another Message
               </Button>
               <Button asChild variant="outline">
-                <Link href="/products">View Products</Link>
+                <Link href="/">Return Home</Link>
               </Button>
             </div>
           </div>
@@ -189,7 +202,7 @@ export default function ContactPage() {
               </h2>
               <div className="space-y-6 mb-8">
                 {contactInfo.map((info) => (
-                  <div key={info.title} className="flex items-start gap-4">
+                  <div key={info.id} className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <info.icon className="h-5 w-5 text-primary" />
                     </div>

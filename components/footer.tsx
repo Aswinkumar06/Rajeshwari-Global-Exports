@@ -44,6 +44,13 @@ export function Footer() {
                 <Phone className="h-4 w-4" />
                 +91-9080653388
               </a>
+              <a 
+                href="tel:+916380636765" 
+                className="flex items-center gap-2 text-sm text-background/80 hover:text-background transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                +91-6380636765
+              </a>
               <div className="flex items-start gap-2 text-sm text-background/80">
                 <MapPin className="h-4 w-4 mt-0.5" />
                 <span>Sathyamangalam, Tamil Nadu, India</span>

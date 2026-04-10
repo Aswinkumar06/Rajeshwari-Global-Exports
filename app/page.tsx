@@ -28,9 +28,9 @@ const benefits = [
 ]
 
 const stats = [
-  { value: "15+", label: "Years Experience" },
+  { value: "3+", label: "Years Experience" },
   { value: "50+", label: "Countries Served" },
-  { value: "1000+", label: "Satisfied Clients" },
+  { value: "100+", label: "Satisfied Clients" },
   { value: "99%", label: "Quality Rate" },
 ]
 
@@ -74,7 +74,7 @@ export default function HomePage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-24 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-primary-foreground/90 font-medium mb-4 tracking-wide uppercase text-sm">
-              Trusted Cocopeat Supplier Since 2008
+              Trusted Cocopeat Supplier Since 2026
             </p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 text-balance">
               Premium Cocopeat Exporter from India
@@ -127,7 +127,7 @@ export default function HomePage() {
                 Your Trusted Partner in Cocopeat Export
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Rajeshwari Global Exports is a leading manufacturer and exporter of premium cocopeat products based in Sathyamangalam, Tamil Nadu, India. With over 15 years of experience in the industry, we have established ourselves as a reliable supplier to agricultural businesses across the globe.
+                Rajeshwari Global Exports is a leading manufacturer and exporter of premium cocopeat products based in Sathyamangalam, Tamil Nadu, India. With 3 years of experience in the industry, we have established ourselves as a reliable supplier to agricultural businesses across the globe.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Our state-of-the-art processing facilities and stringent quality control measures ensure that every shipment meets international standards. We take pride in our sustainable practices and commitment to environmental responsibility.
